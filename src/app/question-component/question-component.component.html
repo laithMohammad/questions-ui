@@ -1,0 +1,21 @@
+<br>
+<div class="container-fluid card">
+  <div class="card-body">
+    <img class="card-img-top" style="border-radius: 100px; width: 50px;"
+         src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
+         alt="Card image cap">   {{  userAsked}}
+    <br>
+    <br>
+    <h5 class="card-title">{{questionTitle}}</h5>
+    <p class="card-text">{{questionContent}}</p>
+  </div>
+  <ul class="list-group list-group-flush">
+
+    <li class="list-group-item"><i style="color: red; size: 30px;" class="fa fa-heart" aria-hidden="true"></i> {{votes}}</li>
+  </ul>
+  <div class="card-body">
+    <a href="#" class="card-link" (click)="showAnswers()">{{answersOptionCaption}} Answers <i class="fa fa-arrow-{{arrow}}" aria-hidden="true"></i></a>
+    <a href="#" class="card-link">Report</a>
+  </div>
+</div>
+<br>
